@@ -1,3 +1,14 @@
+/*
+Given an array of integers, print the length of highest mountain.
+A mountain Is defined as adjacent integers that are strictly increasing until they reach a peak 
+At which they become strictly decreasing.
+
+At least 3 nos are required to form a mountain.
+
+Sample Input :  5 6 1 2 3 4 5 4 3 2 0 1 2 3 -2 4 
+Sample Output: 9
+*/
+
 #include<stdio.h>
 int main()
 {
