@@ -7,7 +7,7 @@ int main()
 
 
 	int* ptr= arr;
-
+	char char='a';
 	for(int i=0;i<n;i++)
 	{
 		printf("index=%d memory location=%p value at this location=%d \n",i,ptr,*ptr);
