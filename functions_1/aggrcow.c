@@ -1,7 +1,24 @@
 #include <stdio.h>
 #include<stdbool.h>
-bool canPlaceCow(int stalls[],int cows,int minDist)
-{
+bool canPlaceCow(int stalls[],int cows,int n,int minDist)
+{	
+	int cnt=1;
+	int lastCowPosition=stalls[0];
+
+	for(int i=1;i<n;i++)
+	{
+		if(stalls[i]-lastCowPosition>=minDist)
+		{
+			lastCowPosition=stalls[i];
+			cnt++;
+
+			if(cnt==cows)
+				return true;
+		} 
+
+
+	}
+return false;
 
 }
 int main()
@@ -19,7 +36,7 @@ int main()
 	{
 		mid=(s+e)/2;
 
-		if(canPlaceCow(stalls,cows,mid))
+		if(canPlaceCow(stalls,cows,n,mid))
 		{
 			s=mid+1;
 			ans=mid;
