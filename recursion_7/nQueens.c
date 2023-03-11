@@ -71,7 +71,7 @@ bool nqueens(int board[][4],int currRow,int n)
 	{
 
 		printMatrix(board,n);
-		return false;
+		return true;
 
 	}
 
